@@ -29,6 +29,7 @@ const UserCard = withStyles(() => ({
     width: 150,
     height: 150,
     marginTop: -130,
+    background: 'white',
     border: 'solid 10px white',
     borderRadius: '50%',
   },
