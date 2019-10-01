@@ -53,9 +53,14 @@ class App extends React.Component<AppProps, AppState> {
 
     return (
       <div>
-        <Typography variant='h1'>Me</Typography>
+        <Typography align='center' variant='h2' gutterBottom>
+          Me
+        </Typography>
         <UserCard user={user} />
-        <Typography variant='h1'>Followers</Typography>
+        <br />
+        <Typography align='center' variant='h2' gutterBottom>
+          Followers
+        </Typography>
         {followers.map((follower) => (
           <UserCard user={follower} />
         ))}
