@@ -34,3 +34,7 @@ export const dave: User = {
   created_at: '2012-05-06T21:15:01Z',
   updated_at: '2019-09-13T16:27:18Z',
 };
+
+export const sleep = (ms: number) => {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+};
