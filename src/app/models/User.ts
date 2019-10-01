@@ -15,21 +15,21 @@ export interface User {
   repos_url: string;
   events_url: string;
   received_events_url: string;
-  type: string;
+  type: Type;
   site_admin: boolean;
-  name?: string;
-  company?: string;
-  blog?: string;
-  location?: string;
-  email?: string;
-  hireable?: string;
-  bio?: string;
-  public_repos?: number;
-  public_gists?: number;
-  followers?: number;
-  following?: number;
-  created_at?: string;
-  updated_at?: string;
+  name?: string | null;
+  company?: string | null;
+  blog?: string | null;
+  location?: string | null;
+  email?: string | null;
+  hireable?: boolean | null;
+  bio?: string | null;
+  public_repos?: number | null;
+  public_gists?: number | null;
+  followers?: number | null;
+  following?: number | null;
+  created_at?: string | null;
+  updated_at?: string | null;
 }
 
 export enum Type {
