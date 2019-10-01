@@ -14,7 +14,7 @@ class UserCard extends React.Component<UserCardProps, UserCardState> {
     const { name, login } = this.props.user;
 
     return (
-      <Card>
+      <Card className='UserCard'>
         <CardContent>
           <Typography variant='h3'>{name || login}</Typography>
         </CardContent>
